@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+
+
+    <!-- 配置jsp 显示ViewResolver -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!--    扫描类上的注解-->
+    <context:component-scan base-package="com.beetle.onlinevideo"></context:component-scan>
+    <!--    加载注解驱动-->
+    <mvc:annotation-driven></mvc:annotation-driven>
+
+    <mvc:default-servlet-handler/>
+    <!--    加载静态资源-->
+<!--    <mvc:resources mapping="/static/imgs/**" location="/static/imgs/ "></mvc:resources>-->
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.beetle.onlinevideo.interceptor.AutoLogInterceptor"></bean>
+        </mvc:interceptor>
+
+    </mvc:interceptors>
+
+
+
+
+
+
+</beans>

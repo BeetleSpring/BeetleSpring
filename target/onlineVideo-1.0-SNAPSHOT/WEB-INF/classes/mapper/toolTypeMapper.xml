@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.beetle.onlinevideo.dao.ToolTypeDao">
+
+    <resultMap id="toolTypeMap" type="ToolType">
+        <id column="id" property="id"></id>
+        <result column="name" property="name"></result>
+        <result column="flag" property="flag"></result>
+    </resultMap>
+
+
+
+    <select id="selectAll" resultMap="toolTypeMap" resultType="list">
+        select * from tool_type where flag=1
+    </select>
+
+
+
+</mapper>
