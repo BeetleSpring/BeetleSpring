@@ -20,7 +20,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 
-//@SessionAttributes("login_user")
 @Controller
 public class UserController {
 

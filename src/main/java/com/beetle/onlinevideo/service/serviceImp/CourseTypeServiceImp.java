@@ -1,14 +1,12 @@
 package com.beetle.onlinevideo.service.serviceImp;
 
 import com.beetle.onlinevideo.dao.CourseTypeDao;
-import com.beetle.onlinevideo.entity.CourseType;
 import com.beetle.onlinevideo.service.CourseTypeService;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
-import java.util.List;
 @Service
 public class CourseTypeServiceImp implements CourseTypeService {
 

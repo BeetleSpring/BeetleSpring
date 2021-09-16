@@ -7,5 +7,5 @@ import java.util.List;
 public interface BannerDao {
 
 
-    public List<Banner> selectBannerById(Integer[] ids);
+    public List<Banner> selectBannerById(Integer... ids);
 }

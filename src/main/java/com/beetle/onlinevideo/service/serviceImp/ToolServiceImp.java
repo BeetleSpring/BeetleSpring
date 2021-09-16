@@ -1,6 +1,5 @@
 package com.beetle.onlinevideo.service.serviceImp;
 
-import cn.hutool.core.util.RandomUtil;
 import com.beetle.onlinevideo.dao.ToolDao;
 import com.beetle.onlinevideo.service.ToolService;
 import com.github.pagehelper.PageHelper;

@@ -1,19 +1,13 @@
 package com.beetle.onlinevideo.controller;
 
-import com.beetle.onlinevideo.entity.CourseTopic;
 import com.beetle.onlinevideo.service.*;
-import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.sun.org.apache.xpath.internal.operations.Mod;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.jws.WebParam;
-import java.util.List;
 
 @Controller
 public class PageController {

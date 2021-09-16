@@ -1,7 +1,6 @@
 package com.beetle.onlinevideo.controller;
 
 import cn.hutool.core.util.RandomUtil;
-import com.beetle.onlinevideo.dto.UserResponseResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
